@@ -1,23 +1,49 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import ProductsContextProvider from './Global/ProductContext';
+import Products from './Components/Products';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <>
+        <nav>
+          <ul className="left">
+            <li>
+              <a href="/#">PakExpress</a>
+            </li>
+          </ul>
+          <div className="spacer" />
+          <ul className="right">
+            <li>
+              <a href="/#">
+                <span className="ShoppingCart">
+                  <i className="fas fa-cart-plus"></i>
+                  <span className="CountCart">0</span>{" "}
+                </span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </>
+      <>
+      <div className="container">
+        <header>
+          <div className="text">
+            <div>
+              <h1>Welcome</h1>
+              <p>Enjoy online shopping with PakExpress</p>
+            </div>
+
+          </div>
+        </header>
+      </div>
+      </>
+      <ProductsContextProvider>
+        <div className="container">
+          <Products/>
+        </div>
+      </ProductsContextProvider>
     </div>
   );
 }
