@@ -101,3 +101,8 @@ header{
 .text p {
   margin-top: 7px;
 }
+
+/* Search Not Found */
+.not-found{
+  margin-top: 100px;
+}
