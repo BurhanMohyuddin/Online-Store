@@ -106,3 +106,15 @@ header{
 .not-found{
   margin-top: 100px;
 }
+
+/*for media*/
+
+@media(max-width: 765px){
+
+  header{
+    height: 180px;
+  }
+  .text {
+    padding: 0 50px;
+  }
+}
