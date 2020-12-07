@@ -1,7 +1,7 @@
-import React, {useContext} from 'react';
+import React from 'react';
 import './App.css';
 import ProductsContextProvider from './Global/ProductContext';
-import CartContextProvider, {CartContext} from './Global/CartContext';
+import CartContextProvider from './Global/CartContext';
 import Products from './Components/Products';
 import {BrowserRouter, Route, Switch, Link} from 'react-router-dom';
 import Cart from './Components/Cart';
