@@ -12,7 +12,7 @@ export const CartReducer = (state, action) => {
             if(check){
                 return state;
             }else {
-                product= action.product;
+                product= action.item;
                 product['qty'] = 1;
                 updatedQty = qty + 1;
                 updatedPrice = totalPrice + product.price;

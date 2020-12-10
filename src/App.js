@@ -8,9 +8,7 @@ import Cart from './Components/Cart';
 import SearchNotFound from './Components/SearchNotFound';
 
 const App = () => {
-  // const {qty} = useContext(CartContext);
-  // console.log("qty", qty);
-
+   
   return (
     <div>
       <ProductsContextProvider>

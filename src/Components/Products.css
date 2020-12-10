@@ -80,6 +80,58 @@
     
 }
 
+.input{
+    /* background-color:#f47443;
+    color:white; */
+    width: 200px;
+    height: 30px;
+    outline: none;
+    border-color: #bbbbbb;
+    box-shadow: 0 0 10px #9bb6d3;
+    border-radius: 7px;
+    padding-left: 15px;
+
+  }
+  .container ul{
+    list-style: none;
+    display: flex;
+    margin-top: 90px;
+  }
+  .spacer {
+    flex: 1;
+  }
+  /* .filter-by-price select{
+    width: 150px;
+    height: 30px;
+    outline: none;
+    border-radius: 7px;
+    padding-left: 15px;
+  } */
+
+  .minPrice{
+    width: 100px;
+    height: 30px;
+    outline: none;
+    border-radius: 7px;
+    padding-left: 15px;
+  }
+  .maxPrice{
+    width: 100px;
+    height: 30px;
+    outline: none;
+    border-radius: 7px;
+    padding-left: 15px;
+    margin-left: 5px;
+  }
+  .dropdown select{
+    width: 150px;
+    height: 30px;
+    outline: none;
+    border-radius: 7px;
+    padding-left: 15px;
+    margin-left: 10px;
+  }
+
 @media(max-width: 765px){
     .products{
       flex-wrap: wrap;
@@ -90,5 +142,19 @@
      margin: 20px 0px;   
      padding: 0 10px;
     }
-    
+    .container ul{
+        flex-direction: column;
+      }
+    .filter-by-price{
+        margin-top: 10px;
+    }
+    .maxPrice{
+        margin-top: 10px;
+        margin-left: 5px;
+    }
+    .dropdown select{
+        margin-top: 10px;
+        margin-left: 0px;
+    }
   }
+  
