@@ -72,7 +72,7 @@ const Products = () => {
       filteredProducts = filteredProducts.filter(product => product.price <= max)
     }
     setItems(filteredProducts);
-  }, [min,max])
+  }, [min,max,products])
   
 
   return (
